@@ -13,6 +13,7 @@ body {
     font-size: 1.6rem;
     background-color: #1A1924;
     color: #E1E1E6;
+    font-family: 'Roboto', sans-serif;
 }
 
 body * {
@@ -27,4 +28,42 @@ body * {
 
     display: grid;
     grid-template-rows: max-content 1fr max-content;
+}
+
+#top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#user-info {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+#user-info img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#user-status .status::before {
+    content: '';
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #00b37e;
+    border-radius: 50%;
+}
+
+#user-status .status {
+    color: #00b37e;
+
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+
+    margin: 0.4rem;
 }

@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
   </head>
   <body>
     <div id="app">
@@ -17,12 +22,17 @@
           />
           <div id="user-status">
             <strong>Cecilia Sassaki</strong>
+            <div class="status">Online</div>
           </div>
         </div>
-        <div id="close-chat"></div>
+        <div id="close-chat">
+          <i class="ph-x"></i>
+        </div>
       </div>
       <div id="messages">B</div>
-      <div id="bottom">C</div>
+      <div id="bottom">
+        <i class="ph-paper-plane-right"></i>
+      </div>
     </div>
   </body>
 </html>
