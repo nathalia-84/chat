@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/phosphor-icons"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <div class="user-container">
-            <div class="user">
-                <img src="./assets/avatar.jpg" width="68px" height="68px" alt="avatar">
-                <div class="txt">
-                    <h1>Cecilia Sassaki</h1>
-                    <div class="status">
-                        <div class="circle"></div>
-                        <p>Online</p>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="close">
-                <i class="ph-x"></i>
-            </div>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
+  </head>
+  <body>
+    <div id="app">
+      <div id="top">
+        <div id="user-info">
+          <img
+            src="https://randomuser.me/api/portraits/women/50.jpg"
+            alt="Foto de perfil de uma mulher com cabelo preto liso"
+          />
+          <div id="user-status">
+            <strong>Cecilia Sassaki</strong>
+            <div class="status">Online</div>
+          </div>
         </div>
-        <div class="chat-container">
-            <div class="date">
-                <p>Hoje 11:30</p>
-            </div>
-            <div class="msg received">
-                <p>Cecilia - 11:30</p>
-                <div class="msg-box received">Tive uma ideia incrível para um projeto! 😍</div>
-            </div>
-            <div class="msg sent">
-                <p>Você - 11:32</p>
-                <div class="msg-box sent">Sério? Me conta mais.</div>
-            </div>
-            <div class="msg received">
-                <p>Cecilia - 11:34</p>
-                <div class="msg-box received">E se a gente fizesse um chat moderno e responsivo em apenas uma semana?</div>
-            </div>
-            <div class="msg sent">
-                <p>Você - 11:36</p>
-                <div class="msg-box sent">#boraCodar! 🚀</div>
-            </div>
+        <div id="close-chat">
+          <i class="ph-x"></i>
         </div>
-        <div class="msg-container">
-            <p>Digite sua mensagem</p>
-            <img src="./assets/send.svg" alt="send button">
+      </div>
+      <div id="messages">
+        <div id="last-seen">Hoje 11:30</div>
+        <div class="messages">
+          <div class="message">
+            <div class="top">Cecilia - 11:30</div>
+            <div class="body">Tive uma ideia incrível para um projeto!</div>
+          </div>
+          <div class="message you">
+            <div class="top">Você - 11:32</div>
+            <div class="body">Sério? Conta mais!</div>
+          </div>
+          <div class="message">
+            <div class="top">Cecilia - 11:34</div>
+            <div class="body">E se a gente fizesse um chat moderno e responsivo em apenas uma semana?</div>
+          </div>
+          <div class="message you">
+            <div class="top">Você - 11:36</div>
+            <div class="body">#boraCodar! 🚀</div>
+          </div>
         </div>
+      </div>
+      <div id="bottom">
+        <form class="input-wrapper">
+          <input type="text" placeholder="Digite sua mensagem">
+          <button>
+            <i class="ph-paper-plane-right"></i>
+          </button>
+        </form>
+        
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
